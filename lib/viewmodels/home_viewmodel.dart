@@ -7,6 +7,8 @@ import 'package:big_cart/services/authentication_service.dart';
 import 'package:big_cart/services/carousel_service.dart';
 import 'package:big_cart/services/cart_service.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 

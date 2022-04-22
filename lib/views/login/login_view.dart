@@ -3,6 +3,7 @@ import 'package:big_cart/shared/styles.dart';
 import 'package:big_cart/viewmodels/login_viewmodel.dart';
 import 'package:big_cart/widgets/dumb/authentication_layout.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:stacked/stacked.dart';
 import 'login_form.dart';
 
@@ -11,6 +12,11 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.light),
+    );
     return ViewModelBuilder<LoginViewModel>.reactive(
       viewModelBuilder: () => LoginViewModel(),
       builder: (context, model, child) => AuthenticationLayout(
