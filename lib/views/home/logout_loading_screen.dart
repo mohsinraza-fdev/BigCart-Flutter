@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-
 import '../../shared/styles.dart';
 import '../../viewmodels/home_viewmodel.dart';
 

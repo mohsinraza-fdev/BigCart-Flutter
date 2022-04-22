@@ -1,8 +1,6 @@
 import 'package:big_cart/views/login/login_view.dart';
 import 'package:big_cart/views/splash/splash_view.dart';
-import 'package:flutter/material.dart';
 import 'package:stacked/stacked_annotations.dart';
-
 import '../views/category/category_view.dart';
 import '../views/checkout/checkout_view.dart';
 import '../views/home/home_view.dart';

@@ -6,9 +6,6 @@ import 'package:big_cart/models/product_model.dart';
 import 'package:big_cart/services/authentication_service.dart';
 import 'package:big_cart/services/carousel_service.dart';
 import 'package:big_cart/services/cart_service.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -33,15 +30,6 @@ class HomeViewModel extends BaseViewModel {
   List<CarouselItem> carouselList = <CarouselItem>[];
   List<Category> categories = <Category>[];
   List<Product> products = <Product>[];
-
-  bool searchActive = false;
-
-  void filter(String value) async {
-    searchActive = true;
-    notifyListeners();
-    await Future.delayed(Duration(seconds: 3));
-    print('ASFJASFASJFIJHASDFLIj');
-  }
 
   int productQuantity(Product product) {
     return _cartService.getQuantityFromProduct(product);
@@ -93,7 +81,7 @@ class HomeViewModel extends BaseViewModel {
     logoutAnimationActive = true;
     notifyListeners();
     logoutAnimator();
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     try {
       await _auth.logout();
       logoutAnimationActive = false;
@@ -102,14 +90,12 @@ class HomeViewModel extends BaseViewModel {
       await _auth.resetUser();
       logoutAnimationActive = false;
       _navigator.replaceWith(Routes.loginView);
-      print(e.toString());
     }
     logoutAnimationActive = false;
     notifyListeners();
   }
 
   String _searchBarText = '';
-  String get searchBarText => _searchBarText;
   set searchBarText(String value) {
     _searchBarText = value;
   }

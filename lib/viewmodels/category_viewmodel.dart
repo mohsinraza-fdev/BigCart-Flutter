@@ -1,5 +1,4 @@
 import 'package:stacked/stacked.dart';
-
 import '../app/api.dart';
 import '../app/locator.dart';
 import '../models/product_model.dart';

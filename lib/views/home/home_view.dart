@@ -1,17 +1,9 @@
-import 'package:big_cart/constants/asset_constants.dart';
-import 'package:big_cart/shared/helpers.dart';
 import 'package:big_cart/shared/styles.dart';
 import 'package:big_cart/viewmodels/home_viewmodel.dart';
 import 'package:big_cart/views/home/product_grid_list.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stacked/stacked.dart';
-import 'package:stacked_hooks/stacked_hooks.dart';
-
 import '../../widgets/dumb/loading_indicator.dart';
 import '../../widgets/dumb/page_error_indicator.dart';
 import 'banner_carousel.dart';

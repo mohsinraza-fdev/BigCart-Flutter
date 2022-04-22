@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-
 import '../../constants/asset_constants.dart';
 import '../../shared/styles.dart';
 import '../../viewmodels/home_viewmodel.dart';
@@ -26,7 +25,7 @@ class FloatingCartButton extends ViewModelWidget<HomeViewModel> {
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                offset: Offset(0, 4),
+                offset: const Offset(0, 4),
                 blurRadius: 4,
                 color: appGreenColor.withOpacity(0.26),
               ),

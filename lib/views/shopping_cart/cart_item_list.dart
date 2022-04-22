@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stacked/stacked.dart';
-
 import '../../constants/asset_constants.dart';
 import '../../shared/helpers.dart';
 import '../../shared/styles.dart';
@@ -22,7 +21,7 @@ class CartItemList extends ViewModelWidget<ShoppingCartViewModel> {
           (index) => Slidable(
             endActionPane: ActionPane(
                 extentRatio: 0.22,
-                motion: ScrollMotion(),
+                motion: const ScrollMotion(),
                 children: [
                   GestureDetector(
                     onTap: () =>

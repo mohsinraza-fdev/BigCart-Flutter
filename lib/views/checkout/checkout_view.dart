@@ -1,19 +1,13 @@
 import 'package:big_cart/constants/asset_constants.dart';
-import 'package:big_cart/shared/helpers.dart';
 import 'package:big_cart/shared/styles.dart';
 import 'package:big_cart/viewmodels/checkout_viewmodel.dart';
 import 'package:big_cart/widgets/dumb/app_main_button.dart';
-import 'package:big_cart/widgets/dumb/authentication_field.dart';
 import 'package:big_cart/widgets/dumb/loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:stacked/stacked.dart';
-import 'package:stacked_hooks/stacked_hooks.dart';
-
 import '../../widgets/dumb/customized_app_bar.dart';
 import 'checkout_form.dart';
-import 'validation_message.dart';
 
 class CheckoutView extends StatelessWidget {
   const CheckoutView({

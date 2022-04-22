@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../shared/styles.dart';
 
 class AppMainButton extends StatelessWidget {

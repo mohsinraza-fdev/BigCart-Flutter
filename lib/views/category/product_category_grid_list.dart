@@ -1,9 +1,7 @@
 import 'package:big_cart/viewmodels/category_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-
 import '../../shared/helpers.dart';
-import '../../viewmodels/home_viewmodel.dart';
 import '../../widgets/dumb/product_card.dart';
 
 class ProductCategoryGridList extends ViewModelWidget<CategoryViewModel> {

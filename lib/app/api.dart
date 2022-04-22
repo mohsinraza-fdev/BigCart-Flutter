@@ -1,9 +1,7 @@
 import 'dart:convert';
-
 import 'package:big_cart/models/api_responce_model.dart';
 import 'package:big_cart/models/category_model.dart';
 import 'package:big_cart/models/product_model.dart';
-
 import '../models/user_model.dart';
 import 'package:http/http.dart' as http;
 
@@ -162,7 +160,6 @@ class Api {
           "items": items,
         }),
       );
-      print(jsonDecode(responce.body));
       Map<String, dynamic> json = jsonDecode(responce.body)["data"];
       int id = json["id"];
       return id;
