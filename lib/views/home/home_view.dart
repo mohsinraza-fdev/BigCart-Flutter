@@ -34,11 +34,6 @@ class HomeView extends StatelessWidget {
             statusBarIconBrightness: Brightness.dark),
       );
     });
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
-          statusBarIconBrightness: Brightness.light),
-    );
     return ViewModelBuilder<HomeViewModel>.reactive(
       viewModelBuilder: () => HomeViewModel(),
       onModelReady: (viewModel) => viewModel.onModelReady(),
